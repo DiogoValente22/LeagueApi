@@ -14,5 +14,7 @@ After That, it will show at the terminal something like that:
 
 Now you can click on the link and you will see the application running!
 
+## Notes
+
 <strong>Note</strong>: This application is just for fun and study using API in PHP
 <strong>Note 2</strong>: No interface yet. It will be implemented soon.
