@@ -14,7 +14,14 @@ After That, it will show at the terminal something like that:
 
 Now you can click on the link and you will see the application running!
 
+
 ## Notes
 
-<strong>Note</strong>: This application is just for fun and study using API in PHP<br>
-<strong>Note 2</strong>: No interface yet. It will be implemented soon.
+<pre><strong>Note 1</strong>
+This application is just for fun and to study PHP using API<br>
+<strong>Note 2</strong>
+for now, only the BR (Brazilian) server has been implemented. Soon I will implement the other servers.<br>
+<strong>Note 3</strong>
+champion mastery will be implemented soon
+<br></pre>
+
