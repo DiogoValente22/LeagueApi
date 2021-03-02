@@ -14,6 +14,12 @@ After That, it will show at the terminal something like that:
 
 Now you can click on the link and you will see the application running!
 
+## 📸 The Project
+
+<img src="assets/img/print.PNG">
+<br>
+Responsive:<br>
+<img src="assets/img/print2.PNG">
 
 ## Notes
 
