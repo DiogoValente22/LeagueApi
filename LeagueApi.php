@@ -4,7 +4,7 @@
 class SummonerApi {
 
     private $baseUrl = 'https://br1.api.riotgames.com/lol/';
-    private $apiKey = 'RGAPI-d15f1b39-ad3c-4fe1-a096-00e3d80a0f25';
+    private $apiKey = 'YOUR_KEY_HERE';
     
 
     public function getSummonerByName($summonerName) { // SUMMONER-V4 api
