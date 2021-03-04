@@ -4,7 +4,9 @@ require('LeagueApi.php');
 
 $summonerApi = new SummonerApi();
 
-$name = $_GET['name'] ?? 'kami'; // default summoner: Kami
+// default summoner: Kami
+$name = $_GET['name'] ?? 'kami'; 
+
 //summoner api v4
 $summoner = $summonerApi->getSummonerByName($name);
 
@@ -21,6 +23,7 @@ if(isset($summoner)){
 
     if(isset($league[0]['tier'])){
 
+        // league api v4
         $summonerTier = $league[0]['tier'];
         $summonerRank = $league[0]['rank'];
         $summonerLP = $league[0]['leaguePoints'];
@@ -29,6 +32,24 @@ if(isset($summoner)){
     
         $total = $summonerWins + $summonerLosses;
         $summonerWR = round(($summonerWins / $total) * 100, 1);
+
+        // mastery api
+        $mastery = $summonerApi->getMasteryById($summonerId);
+        $championId = $mastery[0]['championId'];
+        $championPoints = number_format($mastery[0]['championPoints']);
+
+        // champion api
+        $allChampions = $summonerApi->getChampion();
+        $champion = $allChampions['data'];
+
+        $championName = '';
+
+        foreach ($champion as $name => $informations) {
+            if($informations['key'] == $championId){
+                $championName = $name;
+            }
+        }
+
 
         $msg = "
     
@@ -53,10 +74,11 @@ if(isset($summoner)){
                         </div>
                     </div>
                 </div>
-                <div class='row form d-flex flex-column justify-content-center text-center'>
-                    <div class='col-12'>
-                        <p class='text-white'>most played champion:</p>
-                        <p class='text-white'><span class='pink'>Nidalee</span> - 1000000 mastery</p>
+                <div class='row d-flex flex-column justify-content-center text-center'>
+                    <div class='col-12 '>
+                        <p class='text-white most'>most played champion:</p>
+                        <img src='http://ddragon.leagueoflegends.com/cdn/11.5.1/img/champion/{$championName}.png' class='mb-2'>
+                        <p class='text-white'><span class='pink'>{$championName}</span> - {$championPoints} mastery points</p>
                     </div>
                 </div>
         
@@ -87,7 +109,7 @@ if(isset($summoner)){
          <div class='row'>
 
                 <div class='col-12 d-flex flex-column justify-content-center text-center'>
-                    <h2 class='text-white'>404 - summoner not found</h2>
+                    <h2 class='text-white'>404 - Summoner not found</h2>
                 </div>
 
         </div>
