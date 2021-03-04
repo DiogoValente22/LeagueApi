@@ -2,7 +2,14 @@
   League of Legends API
 </h1>
 
-## 💻 Running the server
+# 🔑 Starting the API
+
+to start the Riot Games API, open the file <pre>LeagueApi.php</pre> and in line 7 insert your API key, which you can get by accessing here <a hred="https://developer.riotgames.com/">Riot Developer</a>.
+<img src="assets/img/print5.PNG">
+
+<hr>
+
+# 💻 Running the server
 
 💡 Run the server on the command line just typing the following command:
 
@@ -14,17 +21,22 @@ After That, it will show at the terminal something like that:
 
 Now you can click on the link and you will see the application running!
 
+<hr>
+
 ## 📌
+
 When you open the web page it will show as default the player "kami", a former professional player from Brazil. To change the player, just type the summoner name in the search field at the top of the page.
 
-## 📸 The Project
+# 📸 The Project
 
 <img src="assets/img/print1.PNG">
 <br><hr>
-Now we can see the most played champion
+
+## Now we can see the most played champion
 <img src="assets/img/print3.PNG">
 <br><hr>
-Responsive:<br>
+
+## Responsive:
 <img src="assets/img/print2.PNG">
 <img src="assets/img/print4.PNG">
 
