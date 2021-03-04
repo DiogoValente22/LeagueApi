@@ -62,7 +62,9 @@
 .nickname .summonerName {
     font-size: 30px;
 }
-
+div .most {
+    margin-top: 13px;
+}
 @media (max-width: 767px){
     header nav a {
         display: none!important;
