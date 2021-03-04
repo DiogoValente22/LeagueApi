@@ -2,7 +2,7 @@
   League of Legends API
 </h1>
 
-## Running the server
+## 💻 Running the server
 
 💡 Run the server on the command line just typing the following command:
 
@@ -14,20 +14,26 @@ After That, it will show at the terminal something like that:
 
 Now you can click on the link and you will see the application running!
 
+## 📌
+When you open the web page it will show as default the player "kami", a former professional player from Brazil. To change the player, just type the summoner name in the search field at the top of the page.
+
 ## 📸 The Project
 
-<img src="assets/img/print.PNG">
-<br>
+<img src="assets/img/print1.PNG">
+<br><hr>
+Now we can see the most played champion
+<img src="assets/img/print3.PNG">
+<br><hr>
 Responsive:<br>
 <img src="assets/img/print2.PNG">
+<img src="assets/img/print4.PNG">
 
 ## Notes
 
 <pre><strong>Note 1</strong>
-This application is just for fun and to study PHP using API<br>
+This application is just for fun and to pratice PHP. Maybe soon i will update the html/css to have a more pleasant look.<br>
 <strong>Note 2</strong>
 for now, only the BR (Brazilian) server has been implemented. Soon I will implement the other servers.<br>
 <strong>Note 3</strong>
-champion mastery will be implemented soon
-<br></pre>
-
+Maybe in the future i will implement a match history and some other things<br>
+</pre>
