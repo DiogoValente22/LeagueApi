@@ -4,7 +4,7 @@
 
 # 🔑 Starting the API
 
-to start the Riot Games API, open the file <pre>LeagueApi.php</pre> and in line 7 insert your API key, which you can get by accessing here <a hred="https://developer.riotgames.com/">Riot Developer</a>.
+to start the Riot Games API, open the file <pre>LeagueApi.php</pre> and in line 7 insert your API key, which you can get by accessing here <a href="https://developer.riotgames.com/">Riot Developer</a>.
 <img src="assets/img/print5.PNG">
 
 <hr>
